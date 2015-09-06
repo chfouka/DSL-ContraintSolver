@@ -21,7 +21,7 @@ public class Test {
 		
 
 		PrintWriter pw = new PrintWriter("./out2");
-		File file = new File ("./LS3x3");
+		File file = new File ("../LS3x3");
 		FileReader f = new FileReader(file);
 
 

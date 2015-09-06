@@ -20,7 +20,7 @@ public class Test {
 	public static void main(String[] args) throws IOException, SyntaxException {
 		
 
-		PrintWriter pw = new PrintWriter("./out2");
+		PrintWriter pw = new PrintWriter("../LS3x3Sols");
 		File file = new File ("../LS3x3");
 		FileReader f = new FileReader(file);
 
