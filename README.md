@@ -14,15 +14,15 @@ This is the grammar that I defined for the DSL:
  ```
 Dsl           ::= Statement RestStatement
 RestStatement ::= Statement DSL | 
-Statement 		  ::= Declaration | Relation
-Declaration 	 ::= Variable = {Values}
-Values 				   ::= Value RestValues
-RestValues 		 ::= ,Values | 
-Relation 			  ::= {Couples} | !{Couples}
-Couples 			   ::= (Value,Value) RestCouples
-RestCouples 	 ::= ,Couples |
-Value 				    ::= ide
-Variable 			  ::= ide
+Statement     ::= Declaration | Relation
+Declaration   ::= Variable = {Values}
+Values        ::= Value RestValues
+RestValues    ::= ,Values | 
+Relation      ::= {Couples} | !{Couples}
+Couples       ::= (Value,Value) RestCouples
+RestCouples   ::= ,Couples |
+Value         ::= ide
+Variable      ::= ide
 
 ```
 
@@ -31,9 +31,9 @@ The project implements a descent parser for the DSL grammar able to lexically sc
 
 ###Solver:
 
-The project implements a contraint solver for a `DSL` as an enumerator, able to retunr all possible solutions. <br\>
+The project implements a contraint solver for the `DSL` as an enumerator, able to return one solution at a time. <br\>
 
 ### 3x3 Latin Square:
-You can use the DSL to solve a 3x3 latin square problem for example. The square is represented by rows, and the input is in the file `LS3x3`
+You can use the DSL to solve a 3x3 latin square problem for example. The square is represented by rows, you can find the encoding in the file `LS3x3`
  
 
